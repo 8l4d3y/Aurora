@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <title>Aurora</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1171939260459401219/1173109361778888724/image-removebg-preview_3.png" sizes="192x192">
+    <meta name="description" content="Aurora">
+    <meta name="author" content="equarum">
+    <link rel="stylesheet" href="styles/theTrendingStyle.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .custom-button:hover {
+            background-color: #555;
+        }
+
+        .custom-button img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            width: 140px; 
+        }
+
+ 
+ 
+        body::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #3498db;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 5px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #555;
+}
+
+.custom-button img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 140px;
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3498db; 
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.custom-button img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 140px;
+}
+
+
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+
+<body class="bg-shinyGray overflow-x-hidden">
+    <nav id="navigationBar" class="flex flex-row items-center justify-between p-6 bg-sweetBlack">
+        <div class="left flex flex-row items-center ml-10 md:ml-20 text-white">
+            <a href="Aurora.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Home</a>
+            <a href="Games.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Games</a>
+            <a href="Bookmarklets.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Bookmarklets</a>
+            <a href="contact.html" class="mx-4 text-xl hover:text-blurple hidden md:inline">Contact</a>
+        </div>
+        <div class="right mr-10 md:mr-20">
+            <a href="https://discord.gg/hYPpxvzK7J" class="text-2xl hvr-grow bg-blurple p-4 md:px-8 mx-4 my-4 rounded-lg">Discord</a>
+        </div>
+    </nav>
+
+    <div id="container" class="flex flex-col items-center justify-center">
+
+
+        <header>
+            <h1>Aurora</h1>
+
+
+        </header>
+
+        <script>
+            function searchGames() {
+                
+                var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+        
+                
+                var gameLinks = document.querySelectorAll('.custom-button');
+        
+                
+                gameLinks.forEach(function(link) {
+                    var gameTitle = link.innerText.toLowerCase();
+                    if (gameTitle.includes(searchQuery)) {
+                        link.style.display = 'inline-block';
+                    } else {
+                        link.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    
+    
+    <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Search..." oninput="searchGames()">
+    </div>
+
+        <main>
+            <section>
+                <h1>Soloplayer</h1>
+
+                <a  href="Games/Soloplayer/CookieClicker.html" class="custom-button">
+                    <img src="https://static.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest?cb=20130827014912" alt="Bitlife Icon">
+                    <br>Cookie Clicker
+                </a>
+
+                <a href="Games/Soloplayer/happywheels.html" class="custom-button">
+                    <img src="https://cdn.discordapp.com/attachments/1096618572094119996/1173785459839733810/Z.png?ex=656537e5&is=6552c2e5&hm=101038eecb1edf903da5f383b4c48081a9bb0f5a8f131ded8724b6f446d0b33c&" alt="Bitlife Icon">
+                    <br>Happy Wheels
+                </a>
+        
+                <a href="Games/Soloplayer/Slope3.html" class="custom-button">
+                    <img src="https://slopegame.io/upload/imgs/slope-3-logo.png" alt="Bitlife Icon">
+                    <br>Slope 3
+                </a>
+        
+                <a href="Games/Soloplayer/Arg.html" class="custom-button">
+                    <img src="https://static.wikia.nocookie.net/lego-dimensions-customs/images/5/54/Agario.png/revision/latest?cb=20170714201629" alt="Bitlife Icon">
+                    <br>Agario
+                </a>
+        
+                <a href="Games/Soloplayer/doodle.html" class="custom-button">
+                    <img src="https://cdn.discordapp.com/attachments/1096618572094119996/1173741114923167784/9k.png?ex=65650e98&is=65529998&hm=359e7337b85e9a662f5eb8216f71fdf096c3967e571d4af2aa2a6348f3b3512c&" alt="Bitlife Icon">
+                    <br>Doodle Jump
+                </a>
+        
+                <a href="Games/Soloplayer/Angry.html" class="custom-button">
+                    <img src="https://shorturl.at/koLV1" alt="Angry Birds Icon">
+                    <br>Angry Birds
+                </a>
+        
+                <a href="Games/Soloplayer/8ballpool.html" class="custom-button">
+                    <img src="https://shorturl.at/osyDW" alt="8 Ball Pool Icon">
+                    <br>8 Ball Pool
+                </a>
+        
+                <a href="Games/Soloplayer/rocketbuddy.html" class="custom-button">
+                    <img src="https://shorturl.at/vDHPU" alt="Kick The Buddy Icon">
+                    <br>Kick The Buddy
+                </a>
+        
+                <a href="Games/Soloplayer/time.html" class="custom-button">
+                    <img src="https://shorturl.at/bFK36" alt="Time Shooter Icon">
+                    <br>Time Shooter
+                </a>
+        
+                <a href="Games/Soloplayer/HelixJump.html" class="custom-button">
+                    <img src="https://play-lh.googleusercontent.com/D6ENxaz-nrCuwLkSnGAJj2SRJkr3DqqUYNlsZWV-G76pMBn3fURsZ2D37uv8KO6iJg" alt="Helix Jump Icon">
+                    <br>Helix Jump
+                </a>
+        
+        
+                <a href="Games/Soloplayer/bitlife.html" class="custom-button">
+                    <img src="https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw" alt="Bitlife Icon">
+                    <br>Bitlife
+                </a>
+
+                <a href="Games/Soloplayer/Fruitninja.html" class="custom-button">
+                    <img src="https://cdn.discordapp.com/attachments/1096618572094119996/1173791806656352378/Z.png?ex=65653dce&is=6552c8ce&hm=7551b31238c338733b0fc494e3bd956c8e1d55e07e0e2e1d415660e37d7d3c8f&" alt="Bitlife Icon">
+                    <br>Fruit Ninja
+                </a>
+
+                <a href="Games/Soloplayer/fivenightsatfreddys.html" class="custom-button">
+                    <img src="https://cdn.discordapp.com/attachments/1094456833009262704/1173798147525451786/Z.png?ex=656543b6&is=6552ceb6&hm=2db856402328cceaf0a8c81c52e5aaf2b4b92ad50034277ef5a35598b3302d98&" alt="Bitlife Icon">
+                    <br>Fnaf
+                </a>
+
+                <a href="Games/Soloplayer/Amongus.html" class="custom-button">
+                    <img src="https://cdn.discordapp.com/attachments/1094456833009262704/1173806454579396608/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec.png?ex=65654b73&is=6552d673&hm=b63ecb0e4f73ab1a8fcc1099d7eb64b2a8e6ccb417ad772bcde4b7b660ea895b&" alt="Bitlife Icon">
+                    <br>Among Us
+                </a>
+
+                <a href="Games/Soloplayer/Gta.html" class="custom-button">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202202/2816/mYn2ETBKFct26V9mJnZi4aSS.png" alt="Bitlife Icon">
+                    <br>Gta
+                </a>
+
+                <a href="Games/Soloplayer/ArcadeDrift.html" class="custom-button">
+                    <img src="https://gameforge.com/de-DE/littlegames/includes/images/games/5876_5eb3e769071ba.jpg" alt="Bitlife Icon">
+                    <br>Arcade Drift
+                </a>
+
+                <a href="Games/Soloplayer/BadTimeSim.html" class="custom-button">
+                    <img src="https://flow-user-images.s3.us-west-1.amazonaws.com/prompt/GLzjzhhzg44BRP6lzDR21/1701092505268" alt="Bitlife Icon">
+                    <br>BTSim
+                </a>
+
+            </section>
+            </main>
+    <main>  
+    <section>    
+        <h1>Multiplayer Games</h1>
+        
+        <a href="Games/Multiplayer/smashkarts.html" class="custom-button">
+            <img src="https://play-lh.googleusercontent.com/cM1CXOuBIy0kjGfoCTOKNa812iuVX6X2DDop8xNH4mNyjuM-oj3wVqZ7wiAOizq_TA=w240-h480-rw" alt="Smash Karts Icon">
+            <br>Smash Karts
+        </a>
+
+        <a href="Games/Multiplayer/justfall.html" class="custom-button">
+            <img src="https://cdn.discordapp.com/attachments/1096618572094119996/1173787240464396390/2Q.png?ex=6565398e&is=6552c48e&hm=bfbf02b344893e5330f7f9b37dd87fdc53b4ace89fe8e9452fee007a25024c5c&" alt="Smash Karts Icon">
+            <br>justfall
+        </a>
+
+        <a href="Games/Multiplayer/happy.html" class="custom-button">
+            <img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol Icon">
+            <br>1v1.lol
+        </a>
+
+        <a href="Games/Multiplayer/index.html" class="custom-button">
+            <img src="https://shorturl.at/beILW" alt="Resent 1.8.8 Icon">
+            <br>Resent 1.8.8
+        </a>
+
+        <a href="Games/Multiplayer/2048.html" class="custom-button">
+            <img src="https://cdn.discordapp.com/attachments/1096618572094119996/1174134959804522506/Q42iJK32ZfGDin8AkaCFGxjuu8AAAAASUVORK5CYII.png?ex=65667d64&is=65540864&hm=954396a669b326ac0a10ab50ced168a0c86c5edd4b92d82eb5b0e50a02eaf89f&" alt="Resent 1.8.8 Icon">
+            <br>2048
+        </a>
+
+        <a href="Games/Multiplayer/Fortnite.html" class="custom-button">
+            <img src="https://static.wikia.nocookie.net/logopedia/images/d/db/Fortnite_S1.svg/revision/latest/scale-to-width-down/250?cb=20210330161743" alt="Resent 1.8.8 Icon">
+            <br>Fortnite (RipOff)
+        </a>
+
+
+        </section>
+            </main>
+
+            <main>  
+                <section>    
+                    <h1>Flash Games</h1>
+                    
+                    <a href="Games/Flash/Mario.html" class="custom-button">
+                        <img src="https://cdn.discordapp.com/attachments/1173746254719758437/1173746467941384193/Z.png?ex=65651395&is=65529e95&hm=6803377365ddc66abb11f99c863f222a59203da8e700234a8055a5d236b1bd4a&" alt="Smash Karts Icon">
+                        <br>Super Mario Flash
+                    </a>
+
+                    <a href="Games/Flash/mk1.html" class="custom-button">
+                    <img src="https://i.pinimg.com/736x/c8/3b/b6/c83bb624f6d2bd9aaa2cb192b75ce0b5.jpg" alt="Bitlife Icon">
+                    <br>Mortal Kombat 1
+                </a>
+            
+                    <a href="Games/Flash/Supersmashbros.html" class="custom-button">
+                        <img src="https://static.wikia.nocookie.net/fantendo/images/c/c6/LuigiHeadSSBU.png/revision/latest?cb=20180623014923" alt="Resent 1.8.8 Icon">
+                        <br>Super Smash Brothers
+                    </a>
+            
+            
+                    </section>
+                        </main>
+
+        <footer>
+            <p>&copy; 2023 Aurora</p>
+        </footer>
+    </div>
+</body>
+
+</html>
